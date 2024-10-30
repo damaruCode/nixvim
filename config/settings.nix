@@ -5,6 +5,9 @@
     };
 
     opts = {
+      # Cursor
+      guicursor = "";
+
       # Show line numbers
       number = true;
 
@@ -42,9 +45,6 @@
       # Wrap long lines at a character in 'breakat'
       linebreak = true;
 
-      # Disable spell checking
-      spell = false;
-
       # Disable swap file creation
       swapfile = false;
 
@@ -56,6 +56,9 @@
 
       # Don't show mode in the command line
       showmode = false;
+
+      # Update timer
+      updatetime = 50;
     };
   };
 }

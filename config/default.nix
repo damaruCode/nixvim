@@ -1,6 +1,7 @@
 {
   imports = [ 
     # General configuration
+    ./keymaps.nix
     ./settings.nix
 
     # Themes
@@ -8,5 +9,9 @@
 
     # UI plugins
     ./plugins/ui/lualine.nix
+
+    # LSP
+    ./plugins/lsp/conform.nix
+    ./plugins/lsp/lsp.nix
   ];
 }
