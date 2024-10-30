@@ -2,7 +2,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   config = {
     extraConfigLuaPre =
       # lua
@@ -77,8 +78,10 @@
         '';
         notify_on_error = true;
         formatters_by_ft = {
-          lua = ["stylua"];
-          nix = ["nixfmt-rfc-style"];
+          lua = [ "stylua" ];
+          nix = [ "nixfmt-rfc-style" ];
+          rust = [ "rustfmt" ];
+          cpp = [ "clang-format" ];
           bash = [
             "shellcheck"
             "shellharden"
@@ -87,23 +90,14 @@
         };
 
         formatters = {
-          black = {
-            command = "${lib.getExe pkgs.black}";
+          clang-format = {
+            command = "${lib.getExe' pkgs.clang-tools "clang-format"}";
           };
-          isort = {
-            command = "${lib.getExe pkgs.isort}";
+          rustfmt = {
+            command = "${lib.getExe pkgs.rustfmt}";
           };
           nixfmt-rfc-style = {
             command = "${lib.getExe pkgs.nixfmt-rfc-style}";
-          };
-          alejandra = {
-            command = "${lib.getExe pkgs.alejandra}";
-          };
-          jq = {
-            command = "${lib.getExe pkgs.jq}";
-          };
-          prettierd = {
-            command = "${lib.getExe pkgs.prettierd}";
           };
           stylua = {
             command = "${lib.getExe pkgs.stylua}";
@@ -116,9 +110,6 @@
           };
           shellharden = {
             command = "${lib.getExe pkgs.shellharden}";
-          };
-          bicep = {
-            command = "${lib.getExe pkgs.bicep}";
           };
         };
       };
