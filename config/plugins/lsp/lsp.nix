@@ -1,27 +1,32 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   plugins = {
-    lsp-lines = {enable = true;};
-    lsp-format = {
+    lsp-lines = {
       enable = true;
-      lspServersToEnable = "all";
+    };
+    lsp-format = {
+      enable = false;
     };
     lsp = {
       enable = true;
       inlayHints = true;
       servers = {
-        lua_ls = {enable = true;};
+        lua_ls = {
+          enable = true;
+        };
         nil_ls = {
           enable = true;
           settings.formating.command = [ "nixpkgs-fmt" ];
         };
-        clangd = {enable = true;};
+        clangd = {
+          enable = true;
+        };
         rust_analyzer = {
           enable = true;
           installCargo = true;
           installRustc = true;
         };
       };
-
       keymaps = {
         silent = true;
         lspBuf = {
@@ -57,10 +62,6 @@
             action = "rename";
             desc = "Rename";
           };
-          "<leader>f" = {
-            action = "format";
-            desc = "Format";
-          };
         };
         diagnostic = {
           "<leader>cd" = {
@@ -79,11 +80,10 @@
       };
     };
   };
-
-  extraPlugins = with pkgs.vimPlugins; [
-    
-  ];
-
+  extraPlugins =
+    with pkgs.vimPlugins;
+    [
+    ];
   extraConfigLua = ''
     local _border = "squared"
 
