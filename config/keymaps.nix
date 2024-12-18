@@ -9,7 +9,7 @@
         "v"
       ];
       key = "<leader>e";
-      action = "<cmd>Ex<cr>";
+      action = "<cmd>Oil<cr>";
       options = {
         remap = true;
         silent = true;

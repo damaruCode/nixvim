@@ -17,6 +17,7 @@
     ./plugins/ui/bufferline.nix
     ./plugins/ui/lualine.nix
     ./plugins/ui/startup.nix
+    ./plugins/ui/oil.nix
 
     # LSP
     ./plugins/lsp/fidget.nix
