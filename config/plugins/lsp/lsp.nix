@@ -26,6 +26,9 @@
           installCargo = true;
           installRustc = true;
         };
+        ltex = {
+          enable = true;
+        };
       };
       keymaps = {
         silent = true;

@@ -24,5 +24,8 @@
     ./plugins/lsp/conform.nix
     ./plugins/lsp/lsp.nix
 
+    # Tools
+    ./plugins/tools/vimtex.nix
+
   ];
 }
