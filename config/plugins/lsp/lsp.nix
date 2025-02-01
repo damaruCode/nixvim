@@ -1,5 +1,17 @@
-{ pkgs, ... }:
 {
+  keymaps = [
+    {
+      # show type
+      mode = [
+        "n"
+      ];
+      key = "<leader>t";
+      action = "<cmd>lua vim.lsp.buf.hover()<cr>";
+      options = {
+        remap = true;
+      };
+    }
+  ];
   plugins = {
     lsp-lines = {
       enable = true;
@@ -11,6 +23,9 @@
       enable = true;
       inlayHints = true;
       servers = {
+        erlangls = {
+          enable = true;
+        };
         lua_ls = {
           enable = true;
         };
@@ -83,12 +98,8 @@
       };
     };
   };
-  extraPlugins =
-    with pkgs.vimPlugins;
-    [
-    ];
   extraConfigLua = ''
-    local _border = "squared"
+    local _border = "single"
 
     vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
       vim.lsp.handlers.hover, {

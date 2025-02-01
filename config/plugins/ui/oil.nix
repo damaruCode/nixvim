@@ -1,4 +1,19 @@
-_: {
+{
+  keymaps = [
+    {
+      # open file explorer
+      mode = [
+        "n"
+        "v"
+      ];
+      key = "<leader>e";
+      action = "<cmd>Oil<cr>";
+      options = {
+        remap = true;
+        silent = true;
+      };
+    }
+  ];
   plugins.oil = {
     enable = true;
     settings = {

@@ -22,6 +22,9 @@
         };
       };
     };
+    web-devicons = {
+      enable = true;
+    };
   };
 
   keymaps = [
