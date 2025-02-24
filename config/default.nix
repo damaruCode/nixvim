@@ -9,7 +9,6 @@
 
     # Completion
     ./plugins/cmp/cmp.nix
-    ./plugins/cmp/cmp-copilot.nix
 
     # Snippets
     ./plugins/snippets/luasnip.nix
@@ -33,7 +32,6 @@
     ./plugins/editor/todo-comments.nix
 
     # Tools
-    ./plugins/tools/copilot-chat.nix
     ./plugins/tools/markdown-preview.nix
     ./plugins/tools/telescope.nix
     ./plugins/tools/undotree.nix
