@@ -41,7 +41,7 @@
           installCargo = true;
           installRustc = true;
         };
-        ltex = {
+        texlab = {
           enable = true;
         };
       };
