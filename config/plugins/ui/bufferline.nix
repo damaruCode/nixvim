@@ -48,7 +48,7 @@
 
     {
       mode = "n";
-      key = "<S-o>";
+      key = "<C-o>";
       action = "<cmd>BufferLineCycleNext<cr>";
       options = {
         desc = "Cycle to next buffer";
@@ -57,7 +57,7 @@
 
     {
       mode = "n";
-      key = "<S-n>";
+      key = "<C-n>";
       action = "<cmd>BufferLineCyclePrev<cr>";
       options = {
         desc = "Cycle to previous buffer";
