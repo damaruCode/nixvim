@@ -26,6 +26,9 @@
         erlangls = {
           enable = true;
         };
+        jsonls = {
+          enable = true;
+        };
         lua_ls = {
           enable = true;
         };
