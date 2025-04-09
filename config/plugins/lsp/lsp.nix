@@ -47,6 +47,9 @@
         texlab = {
           enable = true;
         };
+        vscoqtop = {
+          enable = true;
+        };
       };
       keymaps = {
         silent = true;
