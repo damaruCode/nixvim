@@ -32,7 +32,7 @@
     ./plugins/editor/todo-comments.nix
 
     # Tools
-    ./plugins/tools/extra-plugins.nix
+    ./plugins/tools/coqtail.nix
     ./plugins/tools/markdown-preview.nix
     ./plugins/tools/telescope.nix
     ./plugins/tools/undotree.nix
