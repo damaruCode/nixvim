@@ -25,6 +25,7 @@
       servers = {
         erlangls = {
           enable = true;
+          package = null; # TODO
         };
         jsonls = {
           enable = true;
@@ -49,6 +50,7 @@
         };
         vscoqtop = {
           enable = true;
+          package = null; # TODO
         };
         pylsp = {
           enable = true;
