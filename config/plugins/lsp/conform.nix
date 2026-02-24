@@ -40,6 +40,7 @@
           bang = true,
         })
       '';
+
     plugins.conform-nvim = {
       enable = true;
       settings = {
@@ -97,7 +98,7 @@
             command = "${lib.getExe pkgs.rustfmt}";
           };
           nixfmt-rfc-style = {
-            command = "${lib.getExe pkgs.nixfmt-rfc-style}";
+            command = "${lib.getExe pkgs.nixfmt}";
           };
           stylua = {
             command = "${lib.getExe pkgs.stylua}";

@@ -36,6 +36,6 @@
     ./plugins/tools/markdown-preview.nix
     ./plugins/tools/telescope.nix
     ./plugins/tools/undotree.nix
-    ./plugins/tools/vimtex.nix
+    # ./plugins/tools/vimtex.nix
   ];
 }

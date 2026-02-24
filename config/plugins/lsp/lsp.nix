@@ -23,10 +23,6 @@
       enable = true;
       inlayHints = true;
       servers = {
-        erlangls = {
-          enable = true;
-          package = null; # TODO
-        };
         jsonls = {
           enable = true;
         };
@@ -35,7 +31,6 @@
         };
         nil_ls = {
           enable = true;
-          settings.formating.command = [ "nixpkgs-fmt" ];
         };
         clangd = {
           enable = true;
@@ -51,9 +46,6 @@
         vscoqtop = {
           enable = true;
           package = null; # TODO
-        };
-        pylsp = {
-          enable = true;
         };
       };
       keymaps = {
