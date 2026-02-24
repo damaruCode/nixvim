@@ -43,9 +43,8 @@
         texlab = {
           enable = true;
         };
-        vscoqtop = {
+        vsrocq = {
           enable = true;
-          package = null; # TODO
         };
       };
       keymaps = {
