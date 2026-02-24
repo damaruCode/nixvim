@@ -34,6 +34,7 @@
       };
       "<leader>:" = {
         action = "command_history";
+
         options = {
           desc = "Command History";
         };

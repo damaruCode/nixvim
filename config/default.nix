@@ -18,6 +18,7 @@
     ./plugins/ui/lualine.nix
     ./plugins/ui/startup.nix
     ./plugins/ui/oil.nix
+    ./plugins/ui/tiny-inline-diagnostic.nix
 
     # LSP
     ./plugins/lsp/fidget.nix
