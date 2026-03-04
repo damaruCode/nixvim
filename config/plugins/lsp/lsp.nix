@@ -47,10 +47,10 @@
         texlab = {
           enable = true;
         };
-        coq_lsp = {
-          enable = true;
-          package = pkgs.coqPackages_9_1.coq-lsp;
-        };
+        # coq_lsp = {
+        #   enable = true;
+        #   package = pkgs.coqPackages_9_1.coq-lsp;
+        # };
       };
       keymaps = {
         silent = true;
