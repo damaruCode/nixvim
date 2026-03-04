@@ -1,4 +1,8 @@
 {
+  pkgs,
+  ...
+}:
+{
   keymaps = [
     {
       # show type
@@ -43,8 +47,9 @@
         texlab = {
           enable = true;
         };
-        vsrocq = {
+        coq_lsp = {
           enable = true;
+          package = pkgs.coqPackages_9_1.coq-lsp;
         };
       };
       keymaps = {

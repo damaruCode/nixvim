@@ -3,9 +3,6 @@
   ...
 }:
 {
-  extraPackages = with pkgs; [
-    python3
-  ];
   extraPlugins = with pkgs.vimPlugins; [
     Coqtail
   ];
