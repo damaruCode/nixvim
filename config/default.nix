@@ -34,6 +34,7 @@
 
     # Tools
     ./plugins/tools/coqtail.nix
+    ./plugins/tools/claude.nix
     ./plugins/tools/markdown-preview.nix
     ./plugins/tools/telescope.nix
     ./plugins/tools/undotree.nix

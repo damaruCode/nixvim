@@ -66,9 +66,9 @@
             "fe"
           ]
           [
-            " Copilot Chat"
-            "CopilotChat"
-            "ct"
+            "✳ Claude Code"
+            "ClaudeCode"
+            "cc"
           ]
           [
             "󰧑 Take Notes"
